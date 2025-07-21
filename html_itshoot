@@ -1,0 +1,145 @@
+<td style="text-align:center;padding:10px;font-weight:600;">
+    <p>${p.firstName}</p>
+    <a href="https://webapi.dreamerlife.co/v1/api/photograph/assign/${shoot._id}?photograph=${p._id.toString()}"
+        style="display:inline-block;width:100%;text-decoration:none;background-color:#333;color:#fff;padding:6px 0;font-size:14px;border-radius:4px;">
+        SELEZIONA
+    </a>
+</td>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nuova prenotazione fotografica – Hotel Dream</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f2f2;font-family:Inter,Arial,sans-serif;color:#333;line-height:1.5;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f2f2f2;padding:20px;">
+    <tr>
+        <td align="center">
+            <table width="600" cellpadding="0" cellspacing="0" border="0"
+                   style="background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+                <tr>
+                    <td align="center" style="padding:40px 20px 20px;">
+                        <img src="https://webapp.dreamerlife.co/mail/header-mail.png" alt="logo dreamer life">
+                        <img src="https://webapp.dreamerlife.co/mail/arc-mail.png" alt="Arco di Trionfo">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="border-top:1px solid #ececec;border-bottom:1px solid #ececec;text-align:center;padding:20px;">
+                        <h2 style="font-family:Inter,Arial,sans-serif;font-size:18px;letter-spacing:1px;margin:0 0 10px;">
+                            🔔 Nuova prenotazione ricevuta</h2>
+                        <p style="font-size:14px;margin:5px 0;">È stata richiesta una nuova sessione fotografica.</p>
+                        <p style="font-size:14px;margin:5px 0;">Per favore, seleziona un fotografo e convalida la prenotazione.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                               style="background-color:#f7f7f7;border-radius:6px;">
+                            <tr>
+                                <td style="background-color:#e2e2e2;font-family:Inter,Arial,sans-serif;font-size:16px;padding:10px 15px;">
+                                    📁 Informazioni del cliente
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:15px;font-size:14px;color:#333;">
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Nome e Cognome :</strong>
+                                        ${shoot.firstName} ${shoot.lastName}
+                                    </p>
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Email :</strong>
+                                        ${shoot.email}
+                                    </p>
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Telefono :</strong>
+                                        ${shoot.phone}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:15px;font-size:14px;color:#333;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="background-color:#e2e2e2;font-family:Inter,Arial,sans-serif;font-size:16px;padding:10px 15px;">
+                                    📁 Lista degli invitati
+                                </td>
+                            </tr>
+                            ${shoot.persons.map(p => `
+                                <tr>
+                                    <td style="padding:8px 12px;border-bottom:1px solid #ddd;">
+                                        👤 ${p.firstName}
+                                    </td>
+                                </tr>
+                            `).join('')}
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                               style="background-color:#f7f7f7;border-radius:6px;">
+                            <tr>
+                                <td style="background-color:#e2e2e2;font-family:Inter,Arial,sans-serif;font-size:16px;padding:10px 15px;">
+                                    📷 Fascia oraria riservata
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:15px;font-size:14px;color:#333;">
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Luogo :</strong>
+                                        21 avenue de la Grande Armée 75116 Parigi - Francia
+                                    </p>
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Data e ora :</strong>
+                                        ${new Date(shoot.date.toLocaleString('en-US', { timeZone: 'Europe/Paris' })).toString()}
+                                    </p>
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Pacchetto :</strong>
+                                        Sei foto e un video di 44 secondi
+                                    </p>
+                                    <p style="margin:8px 0;">
+                                        <strong style="display:inline-block;width:130px;color:#555;">Numero d’ordine :</strong>
+                                        ${shoot._id}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:20px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                               style="background-color:#f7f7f7;border-radius:6px;">
+                            <tr>
+                                <td style="background-color:#e2e2e2;font-family:Inter,Arial,sans-serif;font-size:16px;padding:10px 15px;">
+                                    👥 Fotografi disponibili
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:15px;font-size:14px;color:#333;text-align:center;">
+                                    <p style="margin:0 0 15px;">Per favore, seleziona un fotografo dall’elenco:</p>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>${links.join()}</tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

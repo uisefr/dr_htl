@@ -1,0 +1,108 @@
+{
+  "languageSelect": "FRANÇAIS",
+  "homeTitle": "Rendi ogni momento un ricordo",
+  "subTitle": "Senza abbonamento, senza impegno, prenota la tua esperienza in un minuto",
+  "location": {
+    "arcTriomphe": {
+      "resume": "Vivi l’eccellenza del reportage fotografico all’Arco di Trionfo, qui a Parigi. I nostri fotografi, tutti formati nella nostra accademia, catturano momenti unici per creare ricordi memorabili.\n Questa prestazione include 6 foto e un video di 44 secondi, ideale per i tuoi post sui social media.",
+      "features": [
+        "Foto",
+        "Video"
+      ]
+    }
+  },
+  "cardTab": {
+    "info": "Info",
+    "hours": "Orari",
+    "contact": "Contatto",
+    "features": "Prestazione"
+  },
+  "days": [
+    "Lunedì",
+    "Martedì",
+    "Mercoledì",
+    "Giovedì",
+    "Venerdì",
+    "Sabato",
+    "Domenica"
+  ],
+  "open": "Aperto",
+  "close": "Chiuso",
+  "readMore": "Vedi di più",
+  "readLess": "Vedi di meno",
+  "newSpots": "Nuove località disponibili molto presto!",
+  "choosePackage": "Prenotare",
+  "selectDate": "Seleziona la data",
+  "availableTimes": "Orari disponibili",
+  "bookingDateButton": "Continua",
+  "select": "Selezionato",
+  "arianeTitle": {
+    "availability": "Selezione dell’orario",
+    "party": "Numero di partecipanti",
+    "personal": "Dati della prenotazione",
+    "confirmation": "Conferma"
+  },
+  "partySizeTitle": "Numero di partecipanti",
+  "guest": "Partecipante",
+  "partySizeText": "Selezione rapida del numero di partecipanti",
+  "nameMembersTitle": "Nomi dei partecipanti",
+  "nameMembersText": "Inserisci i nomi di tutti i partecipanti",
+  "bookingMembersButton": "Continua",
+  "personalInfo": {
+    "title": "Dati della prenotazione",
+    "labels": {
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Indirizzo email",
+      "phone": "Numero di telefono"
+    },
+    "placeholder": {
+      "firstName": "Inserisci il tuo nome",
+      "lastName": "Inserisci il tuo cognome",
+      "email": "Inserisci il tuo indirizzo email",
+      "phone": "Inserisci il tuo numero di telefono"
+    },
+    "buttonLabel": "Continua"
+  },
+  "spotsLeft_one": "{{count}} sessione restante",
+  "spotsLeft_other": "{{count}} sessioni restanti",
+  "confirmTitle": "Conferma della prenotazione",
+  "confirmTitleText": "Verifica tutte le informazioni qui sotto",
+  "confirmSubTitle": "Dettagli della prenotazione",
+  "confirmSubTitleText_one": "Nome del partecipante: ",
+  "confirmSubTitleText_other": "Nomi dei partecipanti: ",
+  "errorTitle": "Ops, si è verificato un errore.",
+  "errorText": "Non siamo riusciti a completare la prenotazione. Per favore riprova.",
+  "errorButton": "Indietro",
+  "confirmGuest_one": "Partecipante",
+  "confirmGuest_other": "Partecipanti",
+  "confirmLabelButton": "Continua",
+  "arianneStep": "Passaggio {{actualStep}} su {{totalStep}}",
+  "videoPromo": "Anteprima",
+  "reservationConfirmed": "Prenotazione confermata",
+  "reservationConfirmSubText": "La tua prenotazione è stata confermata con successo.\n",
+  "shootId": "Numero d’ordine",
+  "shareAndAddEvent": "Grazie per la tua prenotazione",
+  "shareEventSubtext": "La tua sessione è confermata. Puoi aggiungere l’evento al tuo calendario o condividere il link del nostro servizio.",
+  "copySiteLink": "Condividi il servizio",
+  "linkCopied": "Link copiato!",
+  "linkCopyError": "Errore durante la copia del link",
+  "errorBookingTime": "Nessuna fascia oraria disponibile per questa data.",
+  "internalError": "Si è verificato un errore interno.",
+  "uploadTitle": "Caricamento del file",
+  "uploadDescription": "Carica un file .zip contenente gli elementi relativi all’ordine {{id}}.",
+  "dropInstructionTitle": "Trascina qui un file .zip oppure clicca per selezionarne uno",
+  "dropInstructionSub": "Sono accettati solo file .zip.",
+  "selectedFileTitle": "File selezionato:",
+  "remove": "Elimina",
+  "uploadButton": "Invia file",
+  "uploadSuccessTitle": "File inviati con successo!",
+  "uploadSuccessDescription": "Abbiamo ricevuto il tuo file. Grazie!",
+  "confirmUploadTitle": "Confermare l’invio?",
+  "confirmUploadText": "Sei sicuro di voler inviare questo file ZIP?",
+  "cancel": "Annulla",
+  "confirm": "Invia",
+  "uploadError": "Si è verificato un errore durante l’invio del file. Riprova più tardi.",
+  "paymentErrorTitle": "Pagamento annullato",
+  "paymentErrorText": "Il processo di pagamento è stato interrotto. Puoi riprovare in qualsiasi momento."
+}
